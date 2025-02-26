@@ -1,16 +1,20 @@
-import { premierElement } from "./genericscopy.js";
+import { getProperty } from "./generics.js";
 
-const nombres: number[] = [10, 20, 30];
-
-try {
-    const vide: number[] = [];
-} catch (error) {
-    if (error instanceof Error) {
-        console.error(error.message);
-    } else {
-        console.error("Erreur");
-    }
+interface Voiture {
+    marque: string;
+    modele: string;
+    annee: number;
 }
 
-const objets = [{ id: 1, nom: "Alice" }, { id: 2, nom: "Bob" }];
-console.log("Premier élément du tableau d'objets:", premierElement(objets));
+const maVoiture: Voiture = {
+    marque: "ASTon Martin",
+    modele: "DB 6",
+    annee: 1990
+};
+
+const marque = getProperty(maVoiture, "marque");
+console.log("Marque de la voiture:", marque);
+
+const annee = getProperty(maVoiture, "annee");
+console.log("Année de la voiture:", annee);
+
