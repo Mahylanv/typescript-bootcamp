@@ -1,5 +1,10 @@
-import { Rectangle, Cercle, afficherSurface } from "./formes.js";
-const monRectangle = new Rectangle(10, 5);
-const monCercle = new Cercle(7);
-afficherSurface(monRectangle);
-afficherSurface(monCercle);
+import { afficherVehicule } from "./vehicule.js";
+const voitureValide = {
+    marque: "Aston martin",
+    annee: 2012
+};
+const objetInvalide = {
+    marque: "Red bhll"
+};
+afficherVehicule(voitureValide);
+afficherVehicule(objetInvalide);

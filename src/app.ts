@@ -1,8 +1,13 @@
-import { Rectangle, Cercle, afficherSurface } from "./formes.js";
+import { afficherVehicule } from "./vehicule.js";
 
-const monRectangle = new Rectangle(10, 5);
+const voitureValide = {
+    marque: "Aston martin",
+    annee: 2012
+};
 
-const monCercle = new Cercle(7);
+const objetInvalide = {
+    marque: "Red bhll"
+};
 
-afficherSurface(monRectangle);
-afficherSurface(monCercle);
+afficherVehicule(voitureValide);
+afficherVehicule(objetInvalide);
