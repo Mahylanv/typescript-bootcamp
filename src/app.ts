@@ -1,5 +1,8 @@
-import { Animal } from "./animaux.js";
+import { Chien, Chat, faireSeDeplacer } from "./animaux.js";
 
-const monAnimal = new Animal("Leo");
+const medor = new Chien("Medor");
+const felix = new Chat("Félix");
 
-monAnimal.seDeplacer();
+const animaux: (Chien | Chat)[] = [medor, felix];
+
+faireSeDeplacer(animaux);
