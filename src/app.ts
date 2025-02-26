@@ -1,8 +1,7 @@
-import { Chien, Chat, faireSeDeplacer } from "./animaux.js";
+import { Rectangle, Cercle } from "./formes.js";
 
-const medor = new Chien("Medor");
-const felix = new Chat("Félix");
+const monRectangle = new Rectangle(10, 5);
+console.log(`Surface du rectangle: ${monRectangle.calculerSurface()}`);
 
-const animaux: (Chien | Chat)[] = [medor, felix];
-
-faireSeDeplacer(animaux);
+const monCercle = new Cercle(7);
+console.log(`Surface du cercle: ${monCercle.calculerSurface()}`);
