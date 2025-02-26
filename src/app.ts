@@ -1,7 +1,8 @@
-import { traiterValeur } from "./narrowing.js";
+import { Rectangle, Cercle, afficherSurface } from "./formes.js";
 
-const resultat1 = traiterValeur("Hello");
-console.log("Longueur de 'Hello':", resultat1);
+const monRectangle = new Rectangle(10, 5);
 
-const resultat2 = traiterValeur(5);
-console.log("Double de 5:", resultat2);
+const monCercle = new Cercle(7);
+
+afficherSurface(monRectangle);
+afficherSurface(monCercle);
