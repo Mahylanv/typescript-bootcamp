@@ -1,20 +1,14 @@
-import { afficherPersonneAvancee, Personne } from "./personne.js";
+import { afficherInfoProfessionnelle, Employe, Client } from "./personnePro.js";
 
-const personne2: Personne = {
-    id: 1,
+const employe1: Employe = {
     nom: "Alice",
-    age: 25,
-    adresse: {
-        rue: "10 rue des Lilas",
-        ville: "Paris"
-    }
+    poste: "Développeuse Web"
 };
 
-const personne3: Personne = {
-    id: 2,
+const client1: Client = {
     nom: "Bob",
-    age: 30
+    entreprise: "TechCorp"
 };
 
-afficherPersonneAvancee(personne2);
-afficherPersonneAvancee(personne3);
+afficherInfoProfessionnelle(employe1);
+afficherInfoProfessionnelle(client1);
