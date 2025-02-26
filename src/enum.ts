@@ -19,3 +19,11 @@ export function vecteurDirection(direction: Direction): [number, number] {
             throw new Error("Direction inconnue");
     }
 }
+
+export function deplacer(
+    point: [number, number],
+    direction: Direction
+): [number, number] {
+    const [dx, dy] = vecteurDirection(direction);
+    return [point[0] + dx, point[1] + dy];
+}
