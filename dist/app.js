@@ -1,10 +1,5 @@
-import { getProperty } from "./generics.js";
-const maVoiture = {
-    marque: "ASTon Martin",
-    modele: "DB 6",
-    annee: 1990
-};
-const marque = getProperty(maVoiture, "marque");
-console.log("Marque de la voiture:", marque);
-const annee = getProperty(maVoiture, "annee");
-console.log("Année de la voiture:", annee);
+import { traiterValeur } from "./narrowing.js";
+const resultat1 = traiterValeur("Hello");
+console.log("Longueur de 'Hello':", resultat1);
+const resultat2 = traiterValeur(5);
+console.log("Double de 5:", resultat2);
