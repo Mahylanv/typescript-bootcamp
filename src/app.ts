@@ -1,8 +1,20 @@
-import { afficherPersonne, Personne } from "./personne.js";
+import { afficherPersonneAvancee, Personne } from "./personne.js";
 
-const personne1: Personne = {
+const personne2: Personne = {
+    id: 1,
     nom: "Alice",
-    age: 25
+    age: 25,
+    adresse: {
+        rue: "10 rue des Lilas",
+        ville: "Paris"
+    }
 };
 
-afficherPersonne(personne1);
+const personne3: Personne = {
+    id: 2,
+    nom: "Bob",
+    age: 30
+};
+
+afficherPersonneAvancee(personne2);
+afficherPersonneAvancee(personne3);
