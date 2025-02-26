@@ -1,13 +1,5 @@
-import { afficherVehicule } from "./vehicule.js";
+import { Animal } from "./animaux.js";
 
-const voitureValide = {
-    marque: "Aston martin",
-    annee: 2012
-};
+const monAnimal = new Animal("Leo");
 
-const objetInvalide = {
-    marque: "Red bhll"
-};
-
-afficherVehicule(voitureValide);
-afficherVehicule(objetInvalide);
+monAnimal.seDeplacer();
