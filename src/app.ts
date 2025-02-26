@@ -1,14 +1,10 @@
-import { afficherInfoProfessionnelle, Employe, Client } from "./personnePro.js";
+import { premierElement } from "./generics.js";
 
-const employe1: Employe = {
-    nom: "Alice",
-    poste: "Développeuse Web"
-};
+const nombres: number[] = [10, 20, 30];
+console.log("Premiere nombre:", premierElement(nombres));
 
-const client1: Client = {
-    nom: "Bob",
-    entreprise: "TechCorp"
-};
+const chaines: string[] = ["Alice", "Bob", "Charlie"];
+console.log("Premiere chaîne:", premierElement(chaines));
 
-afficherInfoProfessionnelle(employe1);
-afficherInfoProfessionnelle(client1);
+const objets = [{ id: 1, nom: "Alice" }, { id: 2, nom: "Bob" }];
+console.log("Premier objet:", premierElement(objets));
